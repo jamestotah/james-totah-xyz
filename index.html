@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James Totah — james.totah.xyz</title>
+  <meta name="description" content="James Totah — resume and links." />
+  <style>
+    :root { --bg:#0b1224; --text:#e5e7eb; --muted:#94a3b8; --border:#1f2937; --card:#0f172a; --accent:#22d3ee; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;height:100%}
+    body{font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+         background: radial-gradient(1200px 700px at 80% 10%, #111827 0%, #0b1224 40%, var(--bg) 100%);
+         color:var(--text); line-height:1.5;}
+    a{color:var(--text);text-decoration:none}
+    .container{max-width:900px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+    .avatar{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#1f2937,#0f172a);display:grid;place-items:center;
+            border:1px solid var(--border);font-weight:800}
+    .avatar span{font-size:18px;letter-spacing:1px;color:#cbd5e1}
+    .name{font-weight:800;font-size:22px}
+    .muted{color:var(--muted);font-size:14px}
+    .card{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:14px;padding:18px;margin-top:16px}
+    h2{font-size:18px;margin:0 0 8px}
+    .resume-item{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed #233046}
+    .resume-item:last-child{border-bottom:none}
+    .left strong{display:block}
+    .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .chip{border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:12px;color:#cbd5e1}
+    .links{display:grid;grid-template-columns:repeat(auto-fit, minmax(180px,1fr));gap:12px;margin-top:8px}
+    .link{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:12px;padding:12px;transition:transform .12s ease, border-color .12s ease}
+    .link:hover{transform:translateY(-2px);border-color:#334155}
+    .icon{width:18px;height:18px;opacity:.85}
+    footer{margin:28px 0;color:var(--muted);font-size:12px}
+    .small{font-size:12px;color:#9ca3af}
+    .btn{display:inline-block;margin-top:8px;border:1px solid var(--border);padding:8px 12px;border-radius:10px}
+    .btn:hover{border-color:#334155}
+    @media (max-width:540px){ .name{font-size:18px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"><span>JT</span></div>
+      <div>
+        <div class="name">James Totah</div>
+        <div class="muted">TPM • Crypto & Data Platforms • San Jose, CA</div>
+      </div>
+    </header>
+
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p class="small">Short bio goes here. Keep it to 1–2 sentences. You can edit this file anytime.</p>
+      <a class="btn" href="https://totah.xyz">← Back to family hub</a>
+    </section>
+
+    <section class="card" id="resume">
+      <h2>Resume</h2>
+      <div class="resume-item">
+        <div class="left">
+          <strong>Principal Technical Program Manager</strong>
+          <span class="small">Chainalysis — Compliance & Data Platform</span>
+        </div>
+        <div class="right small">2023 — Present</div>
+      </div>
+      <div class="resume-item">
+        <div class="left">
+          <strong>Senior TPM</strong>
+          <span class="small">Atlassian — Platform (Data, API, Streaming)</span>
+        </div>
+        <div class="right small">2018 — 2023</div>
+      </div>
+      <p class="small">Want a downloadable resume? Add a PDF to this site and link it here:</p>
+      <p><a class="btn" href="#" onclick="alert('Replace this with a link to your PDF resume once you add it to the repo.')">Download PDF</a></p>
+      <div class="skills">
+        <div class="chip">Kubernetes</div>
+        <div class="chip">Databricks</div>
+        <div class="chip">Kafka</div>
+        <div class="chip">Flink</div>
+        <div class="chip">AWS</div>
+        <div class="chip">API Platforms</div>
+        <div class="chip">Program Strategy</div>
+      </div>
+    </section>
+
+    <section class="card" id="links">
+      <h2>Links</h2>
+      <div class="links">
+        <a class="link" href="https://www.linkedin.com/in/jamestotah" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6V24h-4v-7.2c0-1.7 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V24h-4V8z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6-2a1 1 0 100 2 1 1 0 000-2z"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a class="link" href="https://github.com/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.73.5.96 5.27.96 11.54c0 4.85 3.15 8.96 7.5 10.41.55.1.75-.24.75-.53v-1.87c-3.05.66-3.7-1.45-3.7-1.45-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.1.08 1.69 1.12 1.69 1.12.98 1.68 2.58 1.2 3.21.92.1-.71.38-1.2.7-1.48-2.44-.27-5-1.22-5-5.45 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 015.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.24-2.56 5.18-5 5.45.39.33.74.97.74 1.96v2.9c0 .29.19.64.75.53 4.35-1.45 7.5-5.56 7.5-10.41C23.04 5.27 18.27.5 12 .5z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a class="link" href="mailto:jt@totah.xyz">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M2 4h20v16H2z" fill="none" stroke="currentColor"/><path d="M2 4l10 9L22 4"/>
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> James Totah</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
