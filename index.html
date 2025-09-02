@@ -188,7 +188,7 @@
       <p class="small">Download my complete resume with detailed experience and achievements:</p>
       <p>
         <a class="btn btn-primary" href="#" onclick="generateResumePDF()" id="resume-download-btn">
-          📄 Download PDF Resume
+          📄 Download Txt Resume
         </a>
         <span class="small" style="margin-left: 12px; opacity: 0.7;">Auto-generated • Always up-to-date</span>
       </p>
@@ -347,7 +347,7 @@
       const originalText = btn.innerHTML;
       
       // Show generating state
-      btn.innerHTML = '⏳ Generating PDF...';
+      btn.innerHTML = '⏳ Generating Resume...';
       btn.style.pointerEvents = 'none';
       
       // Simulate PDF generation (in real app, this would generate actual PDF)
@@ -357,7 +357,7 @@
           name: 'James Totah',
           location: 'Redwood City, CA 94063',
           phone: '408-667-2715',
-          email: 'jt@totah.xyz',
+          email: 'james@totah.xyz',
           summary: 'Principal-level TPM with 10+ years leading long running cross-org programs across data platforms, cloud infra, and product groups. I devise the operating models that help deliver large engineering efforts by leveraging milestone architectures, risk and decision frameworks, structured program governance, and clear communications that reduce chaos.',
           experience: [
             {
@@ -469,6 +469,7 @@ Generated on ${new Date().toLocaleDateString()}
               block: 'start'
             });
           }
+        });
         });
       });
     }
